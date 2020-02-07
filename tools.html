@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <!-- project style sheet -->
+    <link rel="stylesheet" href="/styles/style.css">
+    
+    <!-- Stylesheets for Tables -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.dataTables.min.css">
+</head>
+
+<body>
+
+    <!-- business Title -->
+    <div id="header_0">
+        Tool Rental System
+    </div>
+
+    <!-- login and Sign Up-->
+    <ul id="login_table">
+        <li>
+            <div class="login_table_item">
+                Login
+            </div>
+        </li>
+        <li>
+            <div class="login_table_item">
+                Sign Up
+            </div>
+        </li>
+    </ul>
+
+    <!-- navigation Menu -->
+    <div class="navbar">
+        <ul class="nav_menu">
+            <li class="nav_item">
+                <a href="/index.html">Home</a>
+            </li>
+            <li class="nav_item">
+                <a class="active" href="/tools.html">Tools</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- table for viewing available tools -->
+    <div class="standard_color">
+        <table class="table table-striped" id="tableResults">
+            <div class="table responsive">
+                <thead>
+                <tr>
+                    <th>Tool</th>
+                    <th>Description</th>
+                    <th>Availability</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+               
+                </tbody>
+            </div>
+        </table>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--Data Table-->
+    <script type="text/javascript" charset="utf8"
+            src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8"
+            src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+            src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.flash.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+            src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+            src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.flash.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+            src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+            src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+
+
+    <script type="text/javascript" language="javascript">
+        $(document).ready( function () {
+            $('#tableResults').DataTable( {
+                dom: 'Bfrtip',
+                    buttons: [
+                        'copy', 'excel', 'csv' , 'pdf'
+                    ] }
+            );
+
+            $('#ceremoniesTable').DataTable( {
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'excel', 'csv', 'pdf'
+                ] }
+            );
+        } );
+    </script>
+</body>
+</html>

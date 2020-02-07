@@ -1,0 +1,77 @@
+body {
+    /* color variables */
+    --color_00: white;
+    --color_01: black;
+    --color_02: #091A2C;
+    --color_03: #3C4D5F;
+    --color_04: #566779;
+
+    /* font */
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/* navigation menu container */
+.navbar {
+    position: relative;
+    width: 100%;
+    background-color: var(--color_02);
+}
+  
+/* navigation menu unordered list */
+.nav_menu {
+    overflow: hidden;
+    list-style-type: none;
+}
+
+/* navigation menu list item */
+.nav_item {
+    float: left;
+}
+
+/* navigation menu link */
+.nav_item a {
+    width: 8em;
+    padding: .5em;
+    display: inline-block;
+    position: relative;
+    color: var(--color_00);
+    text-align: center;
+    text-decoration: none;
+}
+
+/* navigation bar item changes color on hover */
+.nav_item a:hover{
+    background-color: var(--color_04);
+}
+
+/* current page in navigation bar */
+.active {
+    background-color: var(--color_03);
+}
+
+/* formatting for title header */
+#header_0 {
+    display: inline-block;
+    padding: .5em; 
+    margin: .25em;
+    font-size: 300%;
+}
+
+/* formatting login, sign up, log out buttons */ 
+#login_table {
+    float: right;
+    list-style-type: none;
+    overflow: hidden;
+}
+.login_table_item {
+    display: inline-block;
+    padding: .5em; 
+    margin: .25em;
+    width: 100%;
+    color: var(--color_00);
+    background-color: var(--color_02);
+}
+/* login item changes color on hover */
+.login_table_item:hover{
+    background-color: var(--color_04);
+}
